@@ -1,8 +1,19 @@
 <div class="container">
-    @for (item of pokemonList; track $index) {
-        <div class="card">
-            <img src="{{item.image}}" alt="{{item.name}} image" />
-            <button type="button" mat-button>{{item.name}}</button>
+    @for (pokemon of pokemonList; track $index) {
+    <div class="card">
+        <button type="button" mat-button [routerLink]="pokemon.id">
+            <p>
+                {{pokemon.id}} - {{pokemon.name}}
+            </p>
+        </button>
+        <div class="image">
+            <img src="{{pokemon.image}}" alt="{{pokemon.name}} image" />
         </div>
+        <div class="info">
+            @for (type of pokemon.types; track $index) {
+            <p class="type {{type.type.name}}">{{type.type.name}}</p>
+            }
+        </div>
+    </div>
     }
 </div>
