@@ -1,4 +1,4 @@
-@import './vars';
+@use './vars' as var;
 
 .type {
     padding: 4px;
@@ -19,73 +19,73 @@
 
 
 .grass {
-    background-color: $grass;
+    background-color: var.$grass;
 }
 
 .fire {
-    background-color: $fire;
+    background-color: var.$fire;
 }
 
 .poison {
-    background-color: $poison;
+    background-color: var.$poison;
 }
 
 .water {
-    background-color: $water
+    background-color: var.$water
 }
 
 .bug {
-    background-color: $bug;
+    background-color: var.$bug;
 }
 
 .electric {
-    background-color: $electric;
+    background-color: var.$electric;
 }
 
 .ground {
-    background-color: $ground;
+    background-color: var.$ground;
 }
 
 .fairy {
-    background-color: $fairy
+    background-color: var.$fairy
 }
 
 .normal {
-    background-color: $normal;
+    background-color: var.$normal;
 }
 
 .flying {
-    background-color: $fliying;
+    background-color: var.$fliying;
 }
 
 .fighting {
-    background-color: $fighting;
+    background-color: var.$fighting;
 }
 
 .psychic {
-    background-color: $psychic;
+    background-color: var.$psychic;
 }
 
 .rock {
-    background-color: $rock;
+    background-color: var.$rock;
 }
 
 .ghost {
-    background-color: $ghost;
+    background-color: var.$ghost;
 }
 
 .ice {
-    background-color: $ice;
+    background-color: var.$ice;
 }
 
 .dragon {
-    background-color: $dragon;
+    background-color: var.$dragon;
 }
 
 .dark {
-    background-color: $dark;
+    background-color: var.$dark;
 }
 
 .steel {
-    background-color: $steel;
+    background-color: var.$steel;
 }
